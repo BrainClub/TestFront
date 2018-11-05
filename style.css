@@ -4,6 +4,7 @@ body {
     font-size: 14px;
     color: #661a23;
     height: 100%;
+    min-width: 1180px ;
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -84,73 +85,73 @@ margin: 0 auto;
     border: 3px solid white;
 }
 
-@media (max-width: 960px) {
-    .avatarArrow{
-        padding-right: 10px;
-    }
-    ul{
-        margin: 0;
-    }
-    .nav-item {
-        margin: 35px 1px;}
-    .nav-item a {
+/*@media (max-width: 960px) {*/
+    /*.avatarArrow{*/
+        /*padding-right: 10px;*/
+    /*}*/
+    /*ul{*/
+        /*margin: 0;*/
+    /*}*/
+    /*.nav-item {*/
+        /*margin: 35px 1px;}*/
+    /*.nav-item a {*/
 
-        padding: 10px 10px;}
+        /*padding: 10px 10px;}*/
 
-    .infoSecond{
-        display: none;
-    }
-}
-@media (max-width: 767px) {
-    .infoSecond{
-        display: none;
-    }
-    .avatar.avatar{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 10px;
-        right: -20px;
-    }
-    .HeaderWords  h1{
-        font-size: 33px;
-    }
-    .HeaderWords p{
-        font-size: 14px;
-    }
-    .logo{
-        padding: 20px;
-    }
-    .nav-menu {
-        /*flex-flow: column wrap;*/
-        /*justify-content: space-around;*/
-        padding: 0;
-        display: block;
-        border: none;
-    }
+    /*.infoSecond{*/
+        /*display: none;*/
+    /*}*/
+/*}*/
+/*@media (max-width: 767px) {*/
+    /*.infoSecond{*/
+        /*display: none;*/
+    /*}*/
+    /*.avatar.avatar{*/
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        /*position: absolute;*/
+        /*top: 10px;*/
+        /*right: -20px;*/
+    /*}*/
+    /*.HeaderWords  h1{*/
+        /*font-size: 33px;*/
+    /*}*/
+    /*.HeaderWords p{*/
+        /*font-size: 14px;*/
+    /*}*/
+    /*.logo{*/
+        /*padding: 20px;*/
+    /*}*/
+    /*.nav-menu {*/
+        /*!*flex-flow: column wrap;*!*/
+        /*!*justify-content: space-around;*!*/
+        /*padding: 0;*/
+        /*display: block;*/
+        /*border: none;*/
+    /*}*/
 
-    .flexCenter{
-        display: block;
-    }
-    .flexBetween{
-        display: block;
-    }
-    .nav-item{
-        margin: 0;
-    }
-    .nav-item a {
-        border-top: 1px solid rgba(255, 255, 255, 0.4);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-        text-align: center;
-        border-radius: 0;
+    /*.flexCenter{*/
+        /*display: block;*/
+    /*}*/
+    /*.flexBetween{*/
+        /*display: block;*/
+    /*}*/
+    /*.nav-item{*/
+        /*margin: 0;*/
+    /*}*/
+    /*.nav-item a {*/
+        /*border-top: 1px solid rgba(255, 255, 255, 0.4);*/
+        /*border-bottom: 1px solid rgba(0, 0, 0, 0.2);*/
+        /*text-align: center;*/
+        /*border-radius: 0;*/
 
-    }
-    .HeaderWords{
-        padding: 20px 0;
-    }
+    /*}*/
+    /*.HeaderWords{*/
+        /*padding: 20px 0;*/
+    /*}*/
 
-}
+/*}*/
 
 
 .HeaderWords button{
@@ -572,6 +573,17 @@ align-self: center;
     border: 3px solid #8effdd;
 }
 
+
+.hw {
+    height: 100px;
+    width: 100px;
+}
+.hw2 {
+    height: 100px;
+    width: 1000px;
+}
+
+
 /*9 2part*/
 
 
@@ -634,6 +646,11 @@ align-self: center;
 .fontSize5em {
 font-size: 5em;
 }
+.fontSize3em {
+    font-size: 3em;
+}
+
+
 
 .footerFeedback{
     display: flex;
@@ -659,7 +676,7 @@ color: white;
     align-items: stretch;
 }
 .labelInput {
-    width: 100%;
+    width: 470px;
 }
 
 .fieldFoot {
@@ -676,7 +693,11 @@ background-size: cover;
 position: relative;
 }
 
+textarea{
 
+    resize: none; /* Запрещаем изменять размер */
+}
+}
 
 .footFirst{
     height: 660px;
@@ -723,7 +744,7 @@ position: relative;
 
 
 .footThird{
-    background: #2f2933 url("img/footer/footThird.png") 0 0 no-repeat;
+    background: #2f2933 url("img/footer/footThird.png") 0 0 repeat;
 }
 .footThird a{
     text-decoration: none;
@@ -776,8 +797,16 @@ position: relative;
 .margin40px0{
     margin:40px 0;
 }
-
+.marginbotton60{
+   margin-bottom: 60px;
+}
 .formFootFirst{
     border: none;
-    min-width: 470px;
+
+}
+.Flex21{
+    flex: 21;
+}
+.flex47{
+    flex: 47;
 }
