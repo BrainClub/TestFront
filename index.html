@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PullRequest</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 <body>
   <header>
     <section class="content flexBetween">
-        <div class="logo">
-        </div>
+        <a href="#" class="logo"></a>
 
         <div class="flexCenter">
             <nav>
@@ -46,38 +47,37 @@
   <main>
 <!--перишй блок-->
       <section class="ContentFirst  content">
-        <section class=" flexBetween">
-                <img src="img/main/ContentFirst/icon.png"  class="">
+        <section class="flexBetween FlexAStart">
+                <div class="CityIcon"></div>
             <div class="">
                 <div class="">
                     <h2>City of <span class="blueText">Love</span></h2>
                 </div>
                 <div class="">
-                    <p>Malang is the second largest city in East Java province, Indonesia. It has a history </p>
-                    <p>dating back to the ancient Mataram Kingdom. The city is famous for its cool </p>
-                    <p>temperature. People in East Java sometimes call it "Paris of East Java.</p>
+                    <p>Malang is the second largest city in East Java province, Indonesia. It has a history
+                    dating back to the ancient Mataram Kingdom. The city is famous for its cool
+                    temperature. People in East Java sometimes call it "Paris of East Java.</p>
                 </div>
             </div>
         </section>
       </section>
 <!--другий блок-->
     <section class="ContentSecond backgroundMain  ">
-        <div class="content">
-
-            <div class="flexBetween">
+        <div class="content ">
+            <div class="flexBetween padding-0x100">
                 <div>
                     <h2>Des<span class="blueText">tination</span></h2>
                 </div>
 
                 <div class="flexCenter infoSecond">
-                    <img src="img/main/ContentSecond/icon.png" title="Розовый динозаврик">
+                    <div class="iconSecond"></div>
                     <p>see basic regulation</p>
                 </div>
             </div>
 
-            <div class="ContentSecondInfo">
-                <p>Being around by many mountain, Malang not only came with mountain vacation, but our beach,</p>
-                <p>cultural spot, and Human Interest is worth to experienced.</p>
+            <div class="ContentSecondInfo padding-0x100">
+                <p>Being around by many mountain, Malang not only came with mountain vacation, but our beach,
+                    cultural spot, and Human Interest is worth to experienced.</p>
             </div>
 
         </div>
@@ -85,20 +85,17 @@
 <!--Third block-->
 <section class="backgroundMain">
     <div class="ContentThird backgroundMain">
-        <div class="content flexBetween">
-            <div>
-
+        <div class="content  flexBetween">
+            <div class="padding-0x100">
                     <div class="search">
                         <button type="submit" class="searchButton">
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </button>
                         <input type="text" class="searchTerm" placeholder="Search destination">
-
                     </div>
-
             </div>
-            <div>
-                <p>ALL PLACE / RECOMENDED PLACE</p>
+            <div class="padding-0x100">
+                <p><span style="font-weight:bold">ALL PLACE /</span> RECOMENDED PLACE</p>
             </div>
         </div>
     </div>
@@ -118,8 +115,8 @@
                <div class="mask">
                    <div class="padding-10">
                    <div class="fourthLogo"></div>
-                   <h1>Batu</h1>
-                   <div class="fourthText">
+                   <h4>Batu</h4>
+                   <p class="fourthText font-weightBold">
                        is a city located in East Java Province of Indonesia. It is
                        situated about 20 km to the northwest of Malang.
                        Formerly, it was a part of Malang Regency; but in 2001,
@@ -127,7 +124,7 @@
                        A population of 190,000 people, it lies on the southern
                        slopes of Gunung Welirang. Its population largely consists
                        of Javanese.
-                   </div>
+                   </p>
                </div>
                </div>
 
@@ -148,14 +145,14 @@
                     <div class="maskFifth">
                         <div class="padding-10">
                             <div class="FifthLogo"></div>
-                            <h1>Batu</h1>
-                            <div class="fourthText">
-                                Mount Bromo is an active volcano and
+                            <h4>Batu</h4>
+                            <p class="fourthText">
+                                <span class="font-weightBold">Mount Bromo</span> is an active volcano and
                                 part of the Tengger massif, in East
                                 Java, Indonesia. At 2,329 metres (7,641 ft)
                                 it is not the highest peak of the massif, but
                                 is the most well known
-                            </div>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -189,10 +186,12 @@
 <!--ШОСТИЙЙЙ КОНТЕНТ ТУТ ПРОСТО КАПЕЦЬ, ТІКАЙТЕ ГЛІПЦІ!!!!!!-->
 
       <div class="ContentEighth content">
-          <div>
-              <h2>Set <span class="blueText">Ittinery</span></h2>
-              <P>Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation.
-                  have a great trip !</P>
+          <div class="">
+              <h2 class="flexCenter">Set&nbsp<span class="blueText">Ittinery</span></h2>
+              <div  class="flexCenter ContentIttinery">
+              <p>Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation.
+                  have a great trip !</p>
+              </div>
           </div>
       </div>
 
@@ -211,7 +210,7 @@
                       </div>
 
                       <div class="flexBetween tableNineth">
-                          <div class="flexStart" >
+                          <div class="flexBetween" >
                               <div class="iconOneNineth"></div>
                               <h6>Mt.Brama</h6>
                           </div>
@@ -220,8 +219,8 @@
 
                    <div class="flexColumn">
                       <div class="flexBetween tableNineth marginTop">
-                          <div class="flexStart" >
-                              <div class="iconOneNineth"></div>
+                          <div class="flexBetween" >
+                              <div class="iconOneNineth2"></div>
                               <h6>Batu City</h6>
                           </div>
                           <div>10.00 - 15.00</div>
@@ -260,14 +259,14 @@
 
                   <div class="flexCenter">
                       <div>
-                          <h3>List of Destination</h3>
+                          <div class="ListDestination">List of Destination</div>
                           <div class="lineTwoNineth"></div>
                       </div>
 
                   </div>
 
                   <div class="flexBetween">
-                      <div>sort by: Mountain</div>
+                      <div><span class="lightblue font-weightBold">sort by:</span> Mountain</div>
                       <i class="fa fa-search" aria-hidden="true"></i>
                   </div>
 
@@ -277,13 +276,13 @@
               <div class="flexBetween coob">
 
                     <div class="flexColumn">
-                        <div> <h3>Mt.Bromo</h3></div>
+                        <div> <h6>Mt.Bromo</h6></div>
                         <div> estimated time: 5 hours </div>
                     </div>
 
 
                       <div class="flexColumn">
-                          <div> <img src="img/main/ContentFifth/fifthOne.png"> </div>
+                          <div class="iconDestination"></div>
                           <div> view details</div>
                       </div>
 
@@ -291,13 +290,13 @@
                   <div class="flexBetween coob">
 
                       <div class="flexColumn">
-                          <div><h3>Mt.Bromo</h3></div>
+                          <div><h6>Mt.Bromo</h6></div>
                           <div> estimated time: 5 hours </div>
                       </div>
 
 
                       <div class="flexColumn">
-                          <div>  <img src="img/main/ContentFifth/fifthOne.png"></div>
+                          <div class="iconDestination"></div>
                           <div> view details</div>
                       </div>
 
@@ -305,13 +304,13 @@
                   <div class="flexBetween coob">
 
                       <div class="flexColumn">
-                          <div> <h3>Mt.Bromo</h3></div>
+                          <div> <h6>Mt.Bromo</h6></div>
                           <div> estimated time: 5 hours </div>
                       </div>
 
 
                       <div class="flexColumn">
-                          <div>  <img src="img/main/ContentFifth/fifthOne.png"></div>
+                          <div class="iconDestination"></div>
                           <div> view details</div>
                       </div>
 
@@ -319,13 +318,13 @@
                   <div class="flexBetween coob">
 
                       <div class="flexColumn">
-                          <div> <h3>Mt.Bromo</h3></div>
+                          <div> <h6>Mt.Bromo</h6></div>
                           <div> estimated time: 5 hours </div>
                       </div>
 
 
                       <div class="flexColumn">
-                          <div>  <img src="img/main/ContentFifth/fifthOne.png"></div>
+                          <div class="iconDestination"></div>
                           <div> view details</div>
                       </div>
 
@@ -333,13 +332,13 @@
                   <div class="flexBetween coob">
 
                       <div class="flexColumn">
-                          <div><h3>Mt.Bromo</h3> </div>
+                          <div><h6>Mt.Bromo</h6> </div>
                           <div> estimated time: 5 hours </div>
                       </div>
 
 
                       <div class="flexColumn">
-                          <div>  <img src="img/main/ContentFifth/fifthOne.png"></div>
+                          <div class="iconDestination"></div>
                           <div> view details</div>
                       </div>
 
@@ -362,9 +361,9 @@
 
       <div class="content flexColumn  ">
           <div class="marginBoth90  white">
-              <h1 class="fontSize5em">Contact</h1>
+              <h2 class="fontSize5em white">Contact</h2>
           </div>
-          <div class="flexBetweenFoot  white marginbotton60">
+          <div class="flexBetweenFoot  white ">
           <article class="flexColumn flex47">
               <div class="flexColumn ">
                         <form>
@@ -397,7 +396,7 @@
               <div class="footerFeedback ">
                   <div class="">
                       <div class="bottomsOfNineth">
-                          <button type="submit" class="button green margin0">SEND MESSAGE</button>
+                          <button type="submit" class="button green">SEND MESSAGE</button>
                       </div>
 
                   </div>
@@ -411,10 +410,17 @@
                   <div class="fontSize3em marginbotton60">You Can Find Us Here</div>
               </div>
               <div class="footerFeedback flexStart2 ">
-                      <div class=" flexStart2">
-                          <i class="fas fa-home padding-5"></i>
-                          <div>Jl.Danau Bratan sekian nomer sekian, Sawojajar Malang<article> FIND ON MAPS</article></div>
+                      <div class="">
+
+                          <div class=" flexStart2">
+                              <div><i class="fas fa-home padding-5"></i></div>
+                              <div class="flexAlighCenter">Jl.Danau Bratan sekian nomer sekian, Sawojajar Malang</div>
+                          </div>
+
+                          <div class="FindMaps"> FIND ON MAPS</div>
                       </div>
+
+
                       <div class=" flexStart2">
                           <div><i class="far fa-user padding-5"></i></div>
                           <div class="flexAlighCenter">(+62) 8816723812</div>
@@ -437,7 +443,7 @@
           <div class="content">
             <div class="flexBetween paddingBoth30 flexCenter">
                 <div class="white">
-                    <h3 class="fontSize5em white">Keep in Touch</h3>
+                    <h2 class="margin0 white">Keep in Touch</h2>
                     <div>We Will Give you latest information about Malang</div>
                 </div>
                 <div class="">

@@ -1,3 +1,15 @@
+@font-face{
+    font-family: 'Chunkfive';
+    src: url('fonts/Chunkfive-Roman.eot');
+    src: url('fonts/Chunkfive-Roman?iefix') format('eot'),
+    url('fonts/Chunkfive-Roman.woff') format('woff'),
+    url('fonts/Chunkfive-Roman.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+p {
+    line-height: 2.5em;
+}
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +17,7 @@ body {
     color: #661a23;
     height: 100%;
     min-width: 1180px ;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
 
 }
 header{
@@ -14,6 +26,11 @@ header{
     width: 100%;
     background-size: cover;
     position: relative;}
+.font-weightBold{
+    font-weight: bold;
+}
+
+
 
 .flexCenter{
     display: flex;
@@ -58,14 +75,16 @@ margin: 0 auto;
     text-align: center;
     color: azure;
     padding: 100px 0;
+    font-family: 'Lato', sans-serif;
 }
 .HeaderWords h1{
-    font-family: 'Bitter', serif;
+    font-family: 'Chunkfive', serif;
     font-size: 80px;
 }
 
 .nav-item{
     margin: 35px 10px;
+    font-family: 'Lato', sans-serif;
 }
 .nav-item a {
     color: #FFF;
@@ -187,28 +206,40 @@ main{
     color: #777777;
 }
 h2 {
+    margin: 60px 0px;
+    font-family: 'Chunkfive', sans-serif;
     color: #29d9c2;
-    font-size: 60px ;
+    font-size: 67px ;
 }
 h3{
     color: #29d9c2;
     font-size: 30px ;
     margin: 10px 0;
 }
+h4 {
+    margin: 10px -3px;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    color: #29d9c2;
+
+}
 
 /*FIRST CONTENT*/
 .ContentFirst{
+
     position: relative;
     bottom: 40px;
     background: rgba(255,255,255,.9);
     padding: 50px 30px;
 }
-/*.imgFirst{*/
-    /*background:  url("img/main/ContentFirst/icon.png") 0 0 no-repeat;*/
-    /*height: 270px;*/
-    /*width: 100%;*/
-    /*background-size: 100%;*/
-/*}*/
+.CityIcon{
+    margin: 50px;
+    background:  url("img/main/ContentFirst/icon.png") 0 0 no-repeat;
+    height: 270px;
+    width: 100%;
+    background-size: 100%;
+}
 
 
 
@@ -217,7 +248,7 @@ h3{
 
 
 .ContentSecond{
-    padding: 70px 10px;
+    padding: 1px 10px;
 
 }
 .ContentSecond img{
@@ -227,9 +258,13 @@ h3{
     color: #c1c1c1;
 }
 .iconSecond{
+    padding: 0 3px;
     background:  url("img/main/ContentSecond/icon.png") 0 0 no-repeat;
     height: 20px;
     width: 20px;
+}
+.ContentSecondInfo {
+    max-width: 670px;
 }
 /*THIRD CONTENT*/
 
@@ -238,7 +273,8 @@ h3{
 }
 
 .search {
-    padding: 5px;
+
+    padding: 8px;
     width: 15em;
     position: relative;
     border: 1px solid grey;
@@ -248,12 +284,12 @@ h3{
 }
 
 .searchTerm {
+    font-style: italic;
     width:200px;
     float: right;
     border: none;
     outline:none;
-
-    color: #9DBFAF;
+    opacity: .5;
 }
 
 .searchTerm:focus{
@@ -293,7 +329,7 @@ h3{
     top: 50%;
     right: 470px;
     border:20px solid transparent; /* Прозрачные границы */
-    border-right: 20px solid rgb(256, 256, 256, 0.8); /* Добавляем треугольник */
+    border-right: 20px solid rgb(256, 256, 256, 0.9); /* Добавляем треугольник */
 }
 
 
@@ -303,7 +339,7 @@ h3{
     right: 0;
     max-width: 470px;
     height: 520px;
-    background-color: rgb(256, 256, 256, 0.8);
+    background-color: rgb(256, 256, 256, 0.9);
     box-sizing: border-box;
 }
 
@@ -312,9 +348,11 @@ h3{
     height: 90px;
 }
 .padding-10{
-    padding: 40px 60px 0px 20px;
+    padding: 40px 30px 0 20px;
 }
-
+.padding-0x100 {
+padding: 0 100px;
+}
 .SeeMore{
     position: absolute;
     top: 92%;
@@ -356,7 +394,7 @@ a{
     top: 0;
     max-width: 330px;
     height:  360px;
-    background-color: rgb(256, 256, 256, 0.8);
+    background-color: rgb(256, 256, 256, 0.9);
     box-sizing: border-box;
 }
 .rombFifth{
@@ -364,7 +402,7 @@ a{
     top: 50%;
     right: 300px;
     border: 20px solid transparent;
-    border-left: 20px solid rgb(256, 256, 256, 0.8);
+    border-left: 20px solid rgb(256, 256, 256, 0.9);
 }
 .SeeMoreFifth{
     height: inherit;
@@ -384,8 +422,8 @@ a{
 
 .FifthLogo{
     background: url("img/main/ContentFifth/fifthOne.png") 0 0 no-repeat;
-    height: 90px;
-    width: 90px;
+    height: 60px;
+    width: 120px;
 }
 
 .iconFifth{
@@ -431,7 +469,10 @@ a{
     text-align: center;
 }
 
-
+.ContentIttinery {
+    max-width: 720px;
+    margin: 0 auto;
+}
 /*!*------------------------------------------------------*!*/
 
 .PartOneNineth{
@@ -448,6 +489,7 @@ a{
     border-radius: 5px;
 }
 .iptutsNineth{
+    width: 670px;
     display: flex;
 
     flex-direction: column;
@@ -459,17 +501,23 @@ a{
 }
 .legentNinethText{
     color: white;
-    font-size: 22px;
-    padding: 25px 250px;
+    font-size: 18px;
+    padding: 25px 240px;
+    font-weight: bold;
 }
 .DataDayNineth{
     color: #42dcc0;
     font-size: 20px;
     padding: 20px 45px;
 }
-.iptutsNineth h6{
+h6{
     font-size: 24px;
     margin: 0;
+    font-weight: 100;
+}
+
+
+.iptutsNineth h6{
     padding-left: 30px;
 }
 .tableNineth{
@@ -486,11 +534,21 @@ a{
     background-size: 100%;
     padding-right: 30px;
 }
+.iconOneNineth2 {
+    background: url("img/main/ContentFourth/fourthIcon.png") center center no-repeat;
+    width: 50px;
+    margin: 0 15px;
+    height: 50px;
+    background-size: 90%;
+
+}
 .marginTop{
     margin-top: 50px;
 }
+.FlexAStart {
+align-items: flex-start;
+}
 .flexStart{
-
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -554,7 +612,7 @@ align-self: center;
     outline: none;
     color: white;
     padding: 20px 30px;
-    margin: 10px 20px;
+    margin: 20px 0px 100px 25px;
     border-radius: 50px;
     transition: 1.5s;
     border: 3px solid transparent;
@@ -564,6 +622,9 @@ align-self: center;
 }
 .blue{
     background: #3ddbc7;
+}
+.lightblue {
+color: #29d9c2;
 }
 .gray{
     color: #5d5c5c;
@@ -584,16 +645,28 @@ align-self: center;
 
 
 /*9 2part*/
+.ListDestination{
+    color: #42dcc6;
+    font-size: 18px;
+    padding: 25px 0px 15px 0;
+    font-weight: bold;
+}
 
-
+.iconDestination {
+    background: url("img/main/ContentFifth/fifthOne.png") 0 0 no-repeat;
+    width: 50px;
+    height: 50px;
+    background-size: 100%;
+    padding-right: 30px;
+}
 .PartTwoNineth{
 
     width: 480px;
 }
 
 .lineTwoNineth{
-    border-top: 1px solid #29d9c2;
-    margin: 0 80px;
+    border-top: 3px solid #29d9c2;
+    margin: 0px 40px 30px;
 }
 .flexStart{
     align-items: flex-start;
@@ -605,11 +678,13 @@ align-self: center;
     border-radius: 10px;
     padding: 15px;
 }
+
+
 .margin0.margin0{
  margin: 0px;
 }
 .padding-5{
-    padding: 15px;
+    padding: 10px;
 }
 
 .marginBoth90 {
@@ -657,7 +732,12 @@ font-size: 5em;
     align-items: flex-end;
     flex-direction: column;
 }
-
+.FindMaps{
+    margin: -5px 0px 0px 35px;
+    font-style: italic;
+    color: yellow;
+    cursor: pointer;
+}
 
 .white{
 color: white;
@@ -682,7 +762,7 @@ color: white;
     border-radius: 10px;
     border: 1px solid darkgrey;
     background: white;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 .backgroundFoot{
 min-height: 730px;
@@ -800,6 +880,7 @@ textarea{
    margin-bottom: 60px;
 }
 .formFootFirst{
+    padding: 0;
     border: none;
 
 }
