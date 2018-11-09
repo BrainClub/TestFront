@@ -194,7 +194,10 @@ margin: 0 auto;
 
 
 .avatarArrow{
-    padding-right: 40px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: black;
 }
 .avatar{
     padding-left: 40px ;
@@ -743,8 +746,15 @@ font-size: 5em;
 color: white;
 }
 
-
-
+.flexBetweenFoot li {
+    padding-left: 20px;
+    list-style-type: none;
+}
+.FindUS {
+text-decoration: none;
+    color: yellow;
+    font-style: italic;
+}
 .borderred{
     border: 1px solid red;
 
@@ -754,9 +764,7 @@ color: white;
     justify-content: space-between;
     align-items: stretch;
 }
-.labelInput {
-    width: 470px;
-}
+
 
 .fieldFoot {
     border-radius: 10px;
@@ -865,7 +873,9 @@ textarea{
     flex: 1;
 }
 
-
+.marginspec input:not(:first-child){
+    margin: 20px 0px 20px 20px;
+}
 
 .margin5{
     margin: 10px;
@@ -879,14 +889,21 @@ textarea{
 .marginbotton60{
    margin-bottom: 60px;
 }
-.formFootFirst{
-    padding: 0;
-    border: none;
 
+.box-sizing{
+    width: 100%;
+    box-sizing: border-box;
 }
+
+
 .Flex21{
     flex: 21;
 }
 .flex47{
     flex: 47;
+}
+
+.iconContact{
+    position: absolute;
+    left: 0px;
 }
